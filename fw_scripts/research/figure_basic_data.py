@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 
 def create(y_extra):
     x = np.linspace(0, 5, 100)
-    y = np.sin(x) + x
+    y = np.sin(x) + x + y_extra
 
-    bf, subplot = plt.subplots()
-    subplot.plot(x, y)
+    fig, subplots = plt.subplots(nrows=2)
+    subplots[0].plot(x, y)
+    fig.savefig('hello.png')
     plt.show()
 
 
