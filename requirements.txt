@@ -2,3 +2,4 @@
 matplotlib
 bwplot
 engformat>=0.1.3
+pandas
